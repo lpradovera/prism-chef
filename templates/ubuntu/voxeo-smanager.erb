@@ -17,8 +17,8 @@
 ### END INIT INFO
 
 # Source function library.      This creates the operating environment for the process to be started
-if [ -r /etc/init.d/functions ]; then
-  . /etc/init.d/functions
+if [ -r /lib/lsb/init-functions ]; then
+  . /lib/lsb/init-functions
 fi
 
 WaitForPidToExit() {
